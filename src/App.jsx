@@ -2,27 +2,36 @@ import { ArrowUp, ChevronRight, Menu, Play } from 'lucide-react'
 
 export default function Dashboard() {
   return (
-    <div className="bg-[#1c1c2e] text-white min-h-screen p-6">
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div className="bg-[#5E52B8] text-white min-h-screen p-6 ">
+      <div className='bg-[#0A0E1A] text-white min-h-2 p-8 border border-[#1d164e] rounded-3xl'>
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
         {/* Header */}
-        <div className="col-span-full flex justify-between items-center mb-6">
-          <div className="text-4xl font-bold text-purple-400">S</div>
-          <Menu className="text-gray-400" />
+        <div className="col-span-full flex justify-between items-center mb-6 pt-4">
+          <div className="text-4xl font-bold text-purple-400 pt-6">S</div>
+          <Menu className="text-gray-400 " />
         </div>
 
         {/* Main content */}
-        <div className="col-span-full lg:col-span-2 lg:row-span-2 flex flex-col justify-center">
-          <h1 className="text-5xl font-bold mb-4">Chart Your Course with Sway Funded</h1>
+        <div className="col-span-full lg:col-span-2 lg:row-span-2 flex flex-col justify-center  shadow-lg rounded-xl shadow-[rgba(0,0,0,0.5)] ">
+          <div className='pt-52 '>
+          <h1 className="text-5xl font-bold mb-4  ">
+          <span className="text-5xl font-bold ">Chart Your </span>
+          <span className="text-5xl font-bold flex">Course with </span>
+          <span className="text-5xl font-bold">Sway Funded </span>
+             
+            </h1>
           <p className="text-gray-400 mb-6">Where Every Move Counts</p>
-          <button className="bg-[#5749C4] text-white py-2 px-4 rounded-full w-max">
+          <button className="bg-[#5749C4] text-white py-2 px-4 rounded-full w-max ">
             Take a challenge
           </button>
+          </div>
+         
         </div>
 
         {/* Access card and Revenue graph */}
         <div className="col-span-full md:col-span-1 space-y-6">
           {/* Access card */}
-          <div className="bg-purple-600 rounded-3xl p-6 flex flex-col justify-between">
+          <div className="bg-[#5749C4] rounded-3xl p-6 flex flex-col justify-between">
             <div className="flex justify-between items-start">
               <div className="bg-white bg-opacity-20 p-3 rounded-full">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-key-round"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5" fill="currentColor"/></svg>
@@ -54,21 +63,21 @@ export default function Dashboard() {
         </div>
 
         {/* Achievable Targets */}
-        <div className="col-span md:col-span-1 bg-[#252543] rounded-3xl p-6 flex flex-col justify-between md:row-span-2">
+        <div className="col-span md:col-span-1 bg-[#252543] rounded-3xl p-6 flex flex-col justify-between md:row-span-2  ">
           <div className="bg-[#252543] rounded-
-          2xl p-4 flex flex-col justify-between">
-            <div>
-              <div className="flex justify-between items-center mb-6">
-                <h3 className="text-xl font-bold">Achievable Targets</h3>
-                <Play className="text-white" />
+          2xl  flex flex-col justify-between bg-custom-gradient h-102 rounded-3xl ">
+            <div className='bg-custom-gradient h-102 rounded-3xl'>
+              <div className="flex justify-between items-center mb-6  ">
+                <h3 className="text-xl font-bold p-6">Achievable Targets</h3>
+                <Play className="text-white " />
               </div>
-              <p className="text-sm text-gray-400 mb-6">
+              <p className="text-sm text-gray-400 mb-6 p-6">
                 Set and conquer goals effortlessly. Achieve success with realistic targets goals effortlessly. Achieve success with realistic targets
               </p>
+            <div className="flex justify-between items-center pt-20 p-6">
+              <div className="w-16 h-1 bg-purple-600 rounded-full "></div>
+              <p className="text-sm text-gray-400  ">1/4</p>
             </div>
-            <div className="flex justify-between items-center">
-              <div className="w-16 h-1 bg-purple-600 rounded-full"></div>
-              <p className="text-sm text-gray-400">1/4</p>
             </div>
           </div>
 
@@ -78,7 +87,7 @@ export default function Dashboard() {
 
             {/* More stats */}
             <div className="bg-[#18192E] rounded-3xl p-6">
-              <h3 className="text-4xl font-bold mb-2 bg-[#18192E] rounded-3xl p-6">$934m</h3>
+              <h3 className="text-4xl font-bold mb-2 bg-[#18192E] rounded-3xl justify-start">$934m</h3>
               <p className="text-gray-400 text-sm bg-[#18192E]">Revenue trading capital by Sway people</p>
               <div className="flex mt-4">
                 {[1, 2, 3, 4, 5].map((i) => (
@@ -116,6 +125,7 @@ export default function Dashboard() {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </div>
   )
