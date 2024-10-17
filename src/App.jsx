@@ -12,18 +12,21 @@ export default function Dashboard() {
           <Menu className="text-gray-400  " />
         {/* Main content */}
         </div>
-        <div className="col-span-full lg:col-span-2 lg:row-span-2 flex flex-col justify-center  shadow-lg rounded-xl shadow-[rgba(0,0,0,0.5)] ">
+        <div className="col-span-full lg:col-span-2 lg:row-span-2 flex flex-col justify-center  shadow-lg  shadow-[rgba(89,82,142,0.5)] bg-custom-gradient h-102 rounded-3xl ">
           <div className='pt-52 '>
           <h1 className="text-5xl font-bold mb-4  ">
-          <span className="text-5xl font-bold ">Chart Your </span>
-          <span className="text-5xl font-bold flex">Course with </span>
-          <span className="text-5xl font-bold">Sway Funded </span>
+          <span className="text-5xl font-bold pl-6">Chart Your </span>
+          <span className="text-5xl font-bold flex pl-6">Course with </span>
+          <span className="text-5xl font-bold pl-6">Sway Funded </span>
              
             </h1>
-          <p className="text-gray-400 mb-6">Where Every Move Counts</p>
-          <button className="bg-[#5749C4] text-white py-2 px-4 rounded-full w-max ">
+          <p className="text-gray-400 mb-6 pl-6">Where Every Move Counts</p>
+          <div className='pl-6'>
+
+          <button className="bg-[#5749C4] text-white py-2 px-4 rounded-full w-max  ">
             Take a challenge
           </button>
+          </div>
           </div>
          
         </div>
@@ -63,10 +66,10 @@ export default function Dashboard() {
         </div>
 
         {/* Achievable Targets */}
-        <div className="col-span md:col-span-1 bg-[#252543] rounded-3xl p-6 flex flex-col justify-between md:row-span-2  ">
+        <div className="col-span md:col-span-1 bg-[#252543] rounded-3xl p-6 flex flex-col justify-between md:row-span-2 shadow-lg  shadow-[rgba(89,82,142,0.5)]  ">
           <div className="bg-[#252543] rounded-
-          2xl  flex flex-col justify-between bg-custom-gradient h-102 rounded-3xl ">
-            <div className='bg-custom-gradient h-102 rounded-3xl'>
+          2xl  flex flex-col justify-between bg-custom-gradient h-102 rounded-3xl   ">
+            <div className='bg-custom-gradient h-102 rounded-3xl '>
               <div className="flex justify-between items-center mb-6  ">
                 <h3 className="text-xl font-bold p-6">Achievable Targets</h3>
                 <Play className="text-white " />
@@ -86,7 +89,7 @@ export default function Dashboard() {
             {/* Profitable traders */}
 
             {/* More stats */}
-            <div className="bg-[#18192E] rounded-3xl p-6">
+            <div className="bg-[#18192E] rounded-3xl p-6 overflow-hidden">
               <h3 className="text-4xl font-bold mb-2 bg-[#18192E] rounded-3xl justify-start">$934m</h3>
               <p className="text-gray-400 text-sm bg-[#18192E]">Revenue trading capital by Sway people</p>
               <div className="flex mt-4">
@@ -98,8 +101,8 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="bg-white rounded-3xl p-6 flex flex-col items-center justify-center">
-              <div className="relative w-32 h-32">
+            <div className="bg-white rounded-3xl p-6 flex flex-col items-center justify-center overflow-hidden">
+              <div className="relative w-32 h-32 ">
                 <svg className="w-full h-full" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="18" cy="18" r="16" fill="none" stroke="#e6e6e6" strokeWidth="2"></circle>
                   <circle cx="18" cy="18" r="16" fill="none" stroke="#3b82f6" strokeWidth="2" strokeDasharray="100 100" strokeDashoffset="5"></circle>
