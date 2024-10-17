@@ -7,11 +7,11 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
         {/* Header */}
         <div className="col-span-full flex justify-between items-center mb-6 pt-4">
-          <div className="text-4xl font-bold text-purple-400 pt-6">S</div>
-          <Menu className="text-gray-400 " />
-        </div>
 
+          <div className="text-4xl font-bold text-purple-400 pt-6">S</div>
+          <Menu className="text-gray-400  " />
         {/* Main content */}
+        </div>
         <div className="col-span-full lg:col-span-2 lg:row-span-2 flex flex-col justify-center  shadow-lg rounded-xl shadow-[rgba(0,0,0,0.5)] ">
           <div className='pt-52 '>
           <h1 className="text-5xl font-bold mb-4  ">
